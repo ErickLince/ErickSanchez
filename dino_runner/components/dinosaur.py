@@ -20,7 +20,7 @@ class Dinosaur:
         if self.step_index >=10:
             self.step_index = 0
 
-    def draw(self,screen):
+    def draw(self, screen):
         screen.blit(self.image, (self.dino_rect.x, self.dino_rect.y))
 
     def event(self):
