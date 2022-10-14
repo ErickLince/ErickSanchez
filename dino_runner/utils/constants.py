@@ -3,9 +3,9 @@ import os
 
 # Global Constants
 TITLE = "Chrome Dino Runner"
-SCREEN_HEIGHT = 600
+SCREEN_HEIGHT = 650
 SCREEN_WIDTH = 1100
-FPS = 30
+FPS = 25
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 # Assets Constants
@@ -69,6 +69,6 @@ BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
-HEART_COUNT = 4
-
 DEFAULT_TYPE = "default"
+
+HEART_COUNT = 4
