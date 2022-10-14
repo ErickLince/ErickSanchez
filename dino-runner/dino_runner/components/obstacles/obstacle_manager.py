@@ -1,7 +1,7 @@
 from dino_runner.components.obstacles.cactus import SmallCactus, LargeCactus
 from dino_runner.components.obstacles.Bird import Bird
 from dino_runner.utils.constants import (
-    SMALL_CACTUS, LARGE_CACTUS, BIRD
+    SMALL_CACTUS, LARGE_CACTUS, BIRD, CLOUD
 )
 from dino_runner.components.dinosaur import Dinosaur
 import random
@@ -23,11 +23,11 @@ class ObstacleManager:
         #        self.obstacles.append(SmallCactus(SMALL_CACTUS))
              
         if len(self.obstacles) == 0:
-            if random.randint(0, 2) == 0:
+            if random.randint(0, 3) == 0:
                 self.obstacles.append(SmallCactus(SMALL_CACTUS))
-            elif random.randint(0, 2) == 1:
+            elif random.randint(0, 3) == 1:
                 self.obstacles.append(LargeCactus(LARGE_CACTUS))
-            elif random.randint(0, 2) == 2:
+            elif random.randint(0, 3) == 2:
                 self.obstacles.append(Bird(BIRD))
 
                     
